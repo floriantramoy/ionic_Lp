@@ -1,0 +1,8 @@
+{
+  "name": "ifminterim-edit-profile",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

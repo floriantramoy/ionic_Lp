@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-item color="primary">
+    <ion-card-title color="light">Profil</ion-card-title>
+
+    <ion-icon (click)="goToLogOut()" name="settings" slot="end"></ion-icon>
+  </ion-item>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Nom:</ion-label>
+    <ion-input [(ngModel)]="name" name="name" required type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Prénom:</ion-label>
+    <ion-input [(ngModel)]="firstName" name="lastname" required type="text"></ion-input>
+
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Ville:</ion-label>
+    <ion-input [(ngModel)]="ville" name="ville" required type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email:</ion-label>
+    <ion-input [(ngModel)]="email" name="email" required type="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Téléphone:</ion-label>
+    <ion-input [(ngModel)]="phone" name="phone" required type="tel"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked"> Type de Contrat</ion-label>
+    <ion-input [(ngModel)]="contrat" name="contrat" required type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked"> Emploi recherché</ion-label>
+    <ion-input [(ngModel)]="emploi" name="emploi" required type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked"> Localisation</ion-label>
+    <ion-input [(ngModel)]="localisation" name="localisation" required type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked"> Disponibilité</ion-label>
+    <ion-input [(ngModel)]="dispo" name="dispo" required type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Votre CV :</ion-label>
+    <ion-input placeholder="Vide" type="file"></ion-input>
+  </ion-item>
+
+
+  <ion-button (click)="updateProfile()" color="success" expand="block" shape="round" type="submit">Enregistrer
+  </ion-button>
+</ion-content>

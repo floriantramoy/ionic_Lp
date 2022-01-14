@@ -1,0 +1,33 @@
+<ion-content class="ion-padding">
+  <ion-card>
+    <form action="">
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked"> Nom </ion-label>
+          <ion-input required type="text" [(ngModel)]="name" name="name"> </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Prénom </ion-label>
+          <ion-input required type="text" [(ngModel)]="firstName" name="firstName"> </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Email </ion-label>
+          <ion-input required type="email" [(ngModel)]="email" name="email"> </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Téléphone </ion-label>
+          <ion-input required type="tel" [(ngModel)]="phone" name="phone"> </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Mot de passe </ion-label>
+          <ion-input required type="password" [(ngModel)]="password" name="password"> </ion-input>
+        </ion-item>
+        <ion-button type="submit" expand="block" shape="round" (click)="register()"> S'inscrire </ion-button>
+      </ion-list>
+    </form>
+  </ion-card>
+
+  <ion-button type="button" href="login" expand="block" shape="round"> Retour </ion-button>
+
+
+</ion-content>
